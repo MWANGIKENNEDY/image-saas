@@ -1,9 +1,26 @@
+import Footer from "@/components/Footer";
+import { GalleryShowcaseSection } from "@/components/GalleryShowcaseSection";
+import { HomeHeroSection } from "@/components/HomeHeroSection";
+import { HowItWorksSection } from "@/components/HowItWorksSection";
+import { ModeToggle } from "@/components/ModeToggle";
+import { PricingSection } from "@/components/PricingSection";
+import Testimonials from "@/components/Testimonials";
+import { PricingTable } from "@clerk/nextjs";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="">
-     
-    </div>
+    <main className=" min-h-screen bg-background p-3 sm:p-4 lg:p-5">
+      <HomeHeroSection />
+      <GalleryShowcaseSection />
+
+      <HowItWorksSection />
+
+
+<PricingSection/>
+      <Testimonials />
+
+      <Footer />
+    </main>
   );
 }
