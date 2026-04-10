@@ -9,9 +9,9 @@ export type GenerationQuotaSnapshot = {
 };
 
 export const BILLING_PLAN_KEYS = {
-  free: "free",
-  pro: "pro",
-  studio: "studio",
+  free: "free_user",
+  pro: "pro_plan",
+  studio: "studio_plan",
 } as const;
 
 export const MONTHLY_GENERATION_LIMITS = {
